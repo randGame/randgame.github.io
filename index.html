@@ -10,10 +10,16 @@
   <script>
     const canvas = document.getElementById("wheelCanvas");
     const ctx = canvas.getContext("2d");
+    let x = 1;
     ctx.canvas.width  = window.innerWidth;
     ctx.canvas.height = window.innerHeight;
     ctx.beginPath();
-    ctx.arc(95 * window.innerWidth, 50 * window.innerHeight, 40, 0, 2 * Math.PI);
+    for (let i = 1; i < 10; i++;) {
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    ctx.scale(x, x);
     ctx.stroke();
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    x++;
+    }
   </script>
 </html>
