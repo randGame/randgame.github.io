@@ -5,6 +5,14 @@
     <title>RandWheel</title>
   </head>
   <body>
-    
+    <canvas id="wheelCanvas" width="480" height="320"></canvas>
   </body>
+  <script>
+    const canvas = document.getElementById("wheelCanvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx.beginPath();
+    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+    ctx.stroke();
+  </script>
 </html>
