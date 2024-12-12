@@ -12,10 +12,8 @@
     const ctx = canvas.getContext("2d");
     let x = 1;
     let y = 1;
-    ctx.canvas.width  = window.innerWidth;
-    ctx.canvas.height = window.innerHeight;
     ctx.beginPath();
-    for (let i = 1; i < 10; i++;) {
+    for (let i = 1; i < 1000; i++;) {
     ctx.arc(x, y, 40, 0, 2 * Math.PI);
     ctx.stroke();
     x++;
